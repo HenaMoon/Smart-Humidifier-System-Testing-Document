@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\kohye\Desktop\[SHS] Final Doc\3. 코드\StateTransitionTest\Debug\Test-Test1.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="AutoOntoManualOnControllerTest1.modeinput" Duration="1" />
+    <TestDuration Test="SetOntoManualOnControllerTest1.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoManualOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="SetOntoManualOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="AutoOfftoManualOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="SetofftoManualOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="SetOfftoManualOnControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoManualOnControllerTest2.modeinput" Duration="1" />
+    <TestDuration Test="SetOntoManualOnControllerTest2.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest1.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest2.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest3.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest4.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest5.modeinput" Duration="1" />
+    <TestDuration Test="AutoOntoAutoOffControllerTest6.modeinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController2.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController3.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController4.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController5.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOntoAutoOffController6.autoinput" Duration="1" />
+    <TestDuration Test="ManualOntoAutoOnControllerTest.autoinput" Duration="1" />
+    <TestDuration Test="ManualOntoAutoOffControllerTest.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoAutoOffControllerTest2.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOffControllerTest.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoAutoOffControllerTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiSucceedTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiSucceedTest2.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiSucceedTest3.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOnControllerHumiSucceedTest1.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOnControllerHumiSucceedTest2.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOnControllerHumiSucceedTest3.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiSucceedTest1.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiSucceedTest2.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiSucceedTest3.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiFailTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiFailTest2.autoinput" Duration="1" />
+    <TestDuration Test="AutoOfftoAutoOnControllerHumiFailTest3.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOnControllerHumiFailTest1.autoinput" Duration="1" />
+    <TestDuration Test="ManualOfftoAutoOnControllerHumiFailTest2.autoinput" Duration="1" />
+    <TestDuration Test="ManualOntoAutoOffControllerHumiFailTest3.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiFailTest1.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiFailTest2.autoinput" Duration="1" />
+    <TestDuration Test="SetOntoSetOfftoAutoOnControllerHumiFailTest3.autoinput" Duration="1" />
+    <TestDuration Test="RepeatSetOnControllerTest.setinput" Duration="1" />
+    <TestDuration Test="RepeatSetOffControllerTest1.setinput" Duration="1" />
+    <TestDuration Test="RepeatSetOffControllerTest2.setinput" Duration="1" />
+    <TestDuration Test="RepeatSetOffControllerTest3.setinput" Duration="1" />
+    <TestDuration Test="AutoOntoSetOntoSetOffControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="AutoOfftoSetOntoSetOffControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="ManualOntoSetOntoSetOffControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="ManualOfftoSetOntoSetOffControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="AutoOntoSetOnControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="ManualOntoSetOnControllerTest.setoffinput" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

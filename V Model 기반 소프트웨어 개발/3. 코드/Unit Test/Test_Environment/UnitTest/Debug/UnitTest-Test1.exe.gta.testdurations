@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\kohye\Desktop\[SHS] Final Doc\3. 코드\Unit Test\Test_Environment\UnitTest\Debug\UnitTest-Test1.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="LcdSetTest.lcdinput" Duration="1" />
+    <TestDuration Test="WaterLevelInspectionTest.waterinput" Duration="1" />
+    <TestDuration Test="WaterLevelLackInspectionTest.waterinput" Duration="1" />
+    <TestDuration Test="ManualOnControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="ManualOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="AutoOffControllerTest.modeinput" Duration="1" />
+    <TestDuration Test="ModeControllerErrorTest.modeinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiSucceedTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiSucceedTest2.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiSucceedTest3.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiFailTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiFailTest2.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControllerHumiFailTest3.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControlErrorTest1.autoinput" Duration="1" />
+    <TestDuration Test="AutoOnControlErrorTest2.autoinput" Duration="1" />
+    <TestDuration Test="SetControllerTest.setinput" Duration="1" />
+    <TestDuration Test="SetControllerErrorTest.setinput" Duration="1" />
+    <TestDuration Test="SetOnControllerTest.setoninput" Duration="1" />
+    <TestDuration Test="SetOnControllerErrorTest.setoninput" Duration="1" />
+    <TestDuration Test="SetOffControllerTest.setoffinput" Duration="1" />
+    <TestDuration Test="SetOffControllerErrorTest.setoffinput" Duration="1" />
+    <TestDuration Test="SetMistakeTest1.setoffinput" Duration="1" />
+    <TestDuration Test="SetMistakeTest2.setoffinput" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
