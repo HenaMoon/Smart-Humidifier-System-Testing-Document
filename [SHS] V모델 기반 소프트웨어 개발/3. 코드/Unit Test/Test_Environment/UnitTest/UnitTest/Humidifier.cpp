@@ -17,8 +17,8 @@ enum mode_type {
     auto_control_succeed = 41
 };
 
-string LCD_SET(float temp, float humi) {
-    printf("temperature : %d , humidity : %d ", temp, humi);
+string LCD_SET(float temperature, float humidity) {
+    printf("temperature : %d , humidity : %d ", temperature, humidity);
     return "LCD SET ON";
 
 }
@@ -89,7 +89,7 @@ int auto_mode_off() {
     return auto_off_succeed;
 }
 // Auto Mode Control Succeed 1.3.3.1, Auto Mode Control Fail 1.3.3.2     
-int Auto_Controller(int auto_control, float h, float t, int error_signal) {
+int Auto_Controller(int auto_control, float humidity, float temperature, int error_signal) {
     error_signal++;
     if (error_signal > 1) {
         return error_num;
@@ -97,34 +97,34 @@ int Auto_Controller(int auto_control, float h, float t, int error_signal) {
 
     if (auto_control == auto_control_succeed) {
 
-        if (t >= 30 && h > 90) {
+        if (temperature >= 30 && humidity > 90) {
             return error_num;
         }
-        else if (t < 18 && h > 90) {
+        else if (temperature < 18 && humidity > 90) {
             return error_num;
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족 1.3.3.1 
-        else if (24 <= t && 60 <= h) {          
+        else if (24 <= temperature && 60 <= humidity) {          
             return auto_humi_succeed();
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족X 1.3.3.2
-        else if (24 <= t && h < 60) {       
+        else if (24 <= temperature && humidity < 60) {       
             return  auto_humi_fail();
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족 1.3.3.1 
-        else if (21 <= t <= 23 && 50 <= h) { 
+        else if (21 <= temperature <= 23 && 50 <= humidity) { 
             return auto_humi_succeed();
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족X 1.3.3.2
-        else if (21 <= t <= 23 && h < 50) {  
+        else if (21 <= temperature <= 23 && humidity < 50) {  
             return auto_humi_fail();
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족 1.3.3.1 
-        else if (18 <= t <= 20 && 40 <= h) {  
+        else if (18 <= temperature <= 20 && 40 <= humidity) {  
             return auto_humi_succeed();
         }
         // 자동설정 켜진 상태에서 온도별 습도 만족X 1.3.3.2
-        else if (18 <= t <= 20 && h < 40) {  
+        else if (18 <= temperature <= 20 && humidity < 40) {  
             return auto_humi_fail();
         }
     }
@@ -157,10 +157,10 @@ int setting_mistake() {
     return set_mistake;
 }
 
-int Set_Controller(string input_humi, float user_humi, int only_set, int higher_humi, float h) {
+int Set_Controller(string input_humi, float user_humi, int only_set, int higher_humi, float humidity) {
     if (input_humi == "std") {
         only_set = 1;
-        if (only_set == 1 && h < user_humi) {
+        if (only_set == 1 && humidity < user_humi) {
             higher_humi = 1;
             return higher_humi;
         }
@@ -181,8 +181,8 @@ int SetOn_Controller(int only_set, int higher_humi, int error_signal) {
     }
 }
 
-int SetOff_Controller(int pause, float h, float user_humi, int error_signal) {
-    if (pause == 35 && h >= user_humi) {
+int SetOff_Controller(int pause, float humidity, float user_humi, int error_signal) {
+    if (pause == 35 && humidity >= user_humi) {
         user_humi = 0;
         error_signal = 0;
         return setting_mode_off();
